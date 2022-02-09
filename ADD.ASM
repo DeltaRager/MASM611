@@ -15,5 +15,5 @@ START:
         MOV RES, AL
         HLT
 CODE ENDS
-END _START
+END START
 
