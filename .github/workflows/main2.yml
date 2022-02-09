@@ -35,4 +35,4 @@ jobs:
           git clone https://github.com/jere-mie/easy-masm
           cp ADD.asm easy-masm/src
           cd easy-masm
-          ./run ADD.asm
+          ./run ADD
