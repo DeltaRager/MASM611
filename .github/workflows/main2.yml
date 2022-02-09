@@ -34,5 +34,6 @@ jobs:
         run: |
           cd MASM611/BIN
           git clone https://github.com/jere-mie/easy-masm
+          cp MASM611/BIN/add.asm easy-masm/src/add.asm
           cd easy-masm
           ./run add.asm
