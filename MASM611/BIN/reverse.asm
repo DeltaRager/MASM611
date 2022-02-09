@@ -1,0 +1,28 @@
+DATA SEGMENT
+SRC DB 'HELLO'
+DEST DB ?
+COUNT EQU ($-src)
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+START:
+      MOV AX,DATA
+      MOV DS,AX
+      MOV CX,COUNT
+      inc cx
+      inc cx
+      LEA SI,SRC
+      ADD SI,COUNT
+      LEA DI,DEST
+BACK:
+     MOV AL,[SI]
+     MOV [DI],AL
+     DEC SI
+     INC DI
+     DEC CX
+     JNZ BACK
+     HLT
+     CODE ENDS
+     END START
+
