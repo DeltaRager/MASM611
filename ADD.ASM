@@ -6,7 +6,7 @@ DATA ENDS
 
 ASSUME CS: CODE, DS: DATA
 CODE SEGMENT
-_START:
+START:
         MOV AX, DS
         MOV DS, AX
         MOV AL, NUM1
@@ -15,5 +15,5 @@ _START:
         MOV RES, AL
         HLT
 CODE ENDS
-END _START
+END START
 
