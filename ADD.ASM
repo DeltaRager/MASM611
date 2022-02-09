@@ -7,7 +7,7 @@ DATA ENDS
 ASSUME CS: CODE, DS: DATA
 CODE SEGMENT
 START:
-        MOV AX, DATA
+        MOV AX, DS
         MOV DS, AX
         MOV AL, NUM1
         SUB AL, NUM2
